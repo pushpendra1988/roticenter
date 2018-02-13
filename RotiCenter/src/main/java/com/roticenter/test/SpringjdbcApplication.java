@@ -22,10 +22,10 @@ public class SpringjdbcApplication {
 		request.setAddress("Gachibowli");
 		request.setEmail("anjanpushpendra@gmail.com");
 		request.setItemDetails("2-roti");
-		//request.setMobile(7680846185L);
+		request.setMobile(7680846185L);
 		request.setOrderBy("pushpendra kumar");
-		//FoodOrderResponse response = service.foodOrder(request);
-		OrderDetailsResponse orderDetails = service.getOrderDetails(0);
+		FoodOrderResponse response = service.foodOrder(request);
+		//OrderDetailsResponse orderDetails = service.getOrderDetails(0);
 		//System.out.println(response.getSuccessMessage());
 	}
 }
