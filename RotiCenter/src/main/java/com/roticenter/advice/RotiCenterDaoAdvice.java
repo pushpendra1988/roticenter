@@ -1,16 +1,19 @@
+/*
+ * @author Pushpendra.Yadav
+ * */
+
 package com.roticenter.advice;
 
 import org.apache.log4j.Logger;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Aspect;
-
 @Aspect 
 public class RotiCenterDaoAdvice {
-	final static Logger logger = Logger.getLogger(com.roticenter.dao.RotiCenterDaoImpl.class);
+	final static Logger logger = Logger.getLogger(com.roticenter.service.RotiCenterOrderServiceImpl.class);
 	
 	 @AfterThrowing(  
-             pointcut = "execution(* com.roticenter.dao.RotiCenterDaoImpl.*(..))",  
+             pointcut = "execution(* com.roticenter.service.RotiCenterOrderServiceImpl.*(..))",  
              throwing= "error")  
                
    public void myadvice(JoinPoint jp,Throwable error)//it is advice  
