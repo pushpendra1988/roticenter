@@ -1,7 +1,6 @@
 /*
  * @author Pushpendra.Yadav
  * */
-
 package com.roticenter.validator;
 
 public class ValidationInfo {
